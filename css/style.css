@@ -1,0 +1,231 @@
+/* 1. RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. ESTILOS GLOBALES */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* 3. ESTILOS DE TEXTOS PRINCIPALES */
+h1, h2, h3 {
+    color: #0d3b66;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+h1 { font-size: 2.2rem; }
+h3 { font-size: 1.4rem; }
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #f4d35e;
+    padding-bottom: 8px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+/* 4. ENLACES GENERALES */
+a {
+    color: #0d3b66;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* 5. DISEÑO DE SECCIONES GENERALES */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 6. ENCABEZADO Y MENÚ */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+header nav a {
+    color: #555555;
+}
+header nav a:hover {
+    color: #0d3b66;
+}
+
+/* 7. SECCIONES HERO Y BOTONES */
+#inicio {
+    text-align: center;
+    padding: 80px 20px;
+}
+#inicio p {
+    font-size: 1.2rem;
+    color: #666666;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+.btn-primario, .btn-whatsapp {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: none;
+}
+.btn-primario {
+    background-color: #0d3b66;
+    color: #ffffff;
+}
+.btn-primario:hover {
+    background-color: #051b30;
+    transform: translateY(-2px);
+}
+.btn-whatsapp {
+    background-color: #25d366;
+    color: #ffffff;
+}
+.btn-whatsapp:hover {
+    background-color: #1ebe57;
+    transform: translateY(-2px);
+}
+
+/* 8. CONTENEDOR Y TARJETA INDIVIDUAL */
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+.tarjeta-servicio {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #0d3b66;
+}
+.tarjeta-servicio ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+.tarjeta-servicio li {
+    margin-bottom: 5px;
+    color: #555555;
+}
+.tarjeta-servicio a {
+    display: inline-block;
+    margin-top: 15px;
+}
+.tarjeta-servicio a:hover {
+    border-bottom: 2px solid #f4d35e;
+}
+
+/* ==========================================================================
+   NUEVO CÓDIGO: ESTILOS PARA FORMULARIO Y FOOTER
+   ========================================================================== */
+
+#contacto {
+    background-color: #ffffff; /* Le damos fondo blanco a toda la sección */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    margin-bottom: 60px;
+}
+
+.formulario-contacto {
+    max-width: 600px; /* Estrecha el formulario para que se vea elegante */
+    margin: 30px auto 0 auto; /* Centra el bloque del formulario */
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column; /* Label arriba, casilla abajo */
+    margin-bottom: 20px;   /* Separación entre casillas */
+    text-align: left;
+}
+
+.grupo-campo label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #0d3b66;
+    font-size: 0.9rem;
+}
+
+/* Estilos comunes para Inputs y Textareas */
+.formulario-contacto input, 
+.formulario-contacto textarea {
+    padding: 12px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease;
+}
+
+/* Efecto cuando el cliente hace clic en una casilla para escribir */
+.formulario-contacto input:focus, 
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: #0d3b66; /* El borde se pinta de azul indicando foco */
+    background-color: #ffffff;
+}
+
+/* BOTÓN DEL FORMULARIO */
+.formulario-contacto button {
+    width: 100%; /* El botón ocupa todo el ancho del formulario en esta sección */
+    margin: 10px 0 0 0;
+}
+
+/* PIE DE PÁGINA (FOOTER) */
+footer {
+    background-color: #0d3b66; /* Fondo azul marino corporativo */
+    color: #ffffff;            /* Texto blanco */
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
+
+
+/* ==========================================================================
+   DISEÑO RESPONSIVO (COMPUTADORAS)
+   ========================================================================== */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+    .contenedor-tarjetas {
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .tarjeta-servicio {
+        flex: 1;
+    }
+}
+/* FORZAR COLOR PARA LOS ENLACES DENTRO DEL PIE DE PÁGINA */
+footer p a {
+    color: #f4d35e !important; /* Nuestro dorado oficial brillante */
+    text-decoration: underline; /* Le pone una línea abajo para que sepa que es un link */
+    font-weight: 700;
+}
+
+/* Cambia a blanco cuando pasas el mouse por encima */
+footer p a:hover {
+    color: #ffffff !important;
+}

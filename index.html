@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Múltiples RD - Transporte, Fumigación y Excursiones</title>
+    
+    <!-- Enlace a Google Fonts (Tipografía Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Enlace a nuestra hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO: Logotipo y Menú -->
+    <header>
+        <h1>Servicios Profesionales RD</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        
+        <!-- SECCIÓN 1: Bienvenida (Hero) -->
+        <section id="inicio">
+            <h2>Confianza y Calidad en RD para Ti</h2>
+            <p>Tu solución confiable para transporte privado, fumigación experta y excursiones inolvidables.</p>
+            <a href="#contacto" class="btn-primario">Contratar Servicios</a>
+            <a href="https://wa.me/18293396899" target="_blank" class="btn-whatsapp">Reserva por WhatsApp</a>
+        </section>
+
+        <!-- SECCIÓN 2: Bloque General de Servicios -->
+        <section id="servicios">
+            <h2>Nuestros Servicios Profesionales</h2>
+            <p>Ofrecemos soluciones de alta calidad adaptadas a tus necesidades.</p>
+
+            <div class="contenedor-tarjetas">
+
+                <!-- Servicio 1: Transporte -->
+                <article class="tarjeta-servicio">
+                    <h3>Transporte Privado</h3>
+                    <p>Viaja seguro y confortablemente por toda la República Dominicana. Contamos con choferes profesionales y vehículos modernos tipo Uber.</p>
+                    <a href="#contacto">Saber Más</a>
+                </article>
+
+                <!-- Servicio 2: Fumigación -->
+                <article class="tarjeta-servicio">
+                    <h3>Fumigación Profesional</h3>
+                    <p>Soluciones expertas para el control de plagas residenciales y comerciales. Utilizamos productos eco-amigables y certificados.</p>
+                    <a href="#contacto">Saber Más</a>
+                </article>
+
+                <!-- Servicio 3: Excursiones -->
+                <article class="tarjeta-servicio">
+                    <h3>Excursiones en RD</h3>
+                    <p>Explora el paraíso. Organizamos viajes inolvidables a los rincones más bellos del país:</p>
+                    <ul>
+                        <li>Punta Cana</li>
+                        <li>Isla Saona</li>
+                        <li>Isla Catalina</li>
+                        <li>Excursion en buggie</li>
+                        <li>Excursion a caballo</li>
+                        <li>Samaná</li>
+                    </ul>
+                    <a href="#contacto">Saber Más</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: Formulario de Contacto -->
+<section id="contacto">
+    <h2>Contáctanos Hoy Mismo</h2>
+    <p>Solicita tu presupuesto sin compromiso. Nos comunicaremos contigo en menos de 24 horas.</p>
+    
+    <!-- Tu formulario conectado a Formspree -->
+    <form class="formulario-contacto" action="https://formspree.io/f/xykrnaoe" method="POST">
+        <div class="grupo-campo">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+        </div>
+
+        <div class="grupo-campo">
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="email" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="grupo-campo">
+            <label for="mensaje">Detalles de lo que necesitas</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué servicio necesitas y para qué fecha..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primario">Enviar Mensaje</button>
+    </form>
+</section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2024 Servicios Múltiples RD ></p>
+        <p>Teléfono: <a href="tel:+18293396899">+1 829-339-6899</a> | WhatsApp: <a href="https://wa.me/18293396899" target="_blank">Enviar Mensaje</a></p>
+    </footer>
